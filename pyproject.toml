@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "Pytorch Mediator"
+version = "1.0.0"
+description = "A template for wrapping research code with user-friendly APIs"
+authors = ["Nicola De Angeli <112023843+niqodea@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11"
+mypy = "^1.7"
+ruff = "^0.1"
+
+[tool.ruff]
+select = ["E", "F", "I001", "W"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
